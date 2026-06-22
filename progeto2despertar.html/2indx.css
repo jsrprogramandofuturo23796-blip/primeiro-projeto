@@ -1,0 +1,15 @@
+*{background-color: aquamarine;}
+
+
+
+.h1{
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.esclarecimento{font-size: 25px;}
+
+
+
+
