@@ -38,7 +38,7 @@ margin-left: 50px;
 display: flex;
    margin-top: 40px;
 gap: 10px;
-margin-left: 20px;
+
 }
 
 .oimaginario{margin-top: 40px;
@@ -60,9 +60,10 @@ font-size: 25px;
 }
 
 .comercial{display: flex;
-    gap: 30px;
+    gap: 5px;
     margin-top: 72px;
-    margin-left: 30px;
+    
+    width: 100%;
 }
 
 .carrinho{
