@@ -1,0 +1,62 @@
+*{margin: 0;
+    border: 0;
+    background-color: rgb(143, 228, 228);}
+
+.h1{display: flex;
+    margin-top: 40px;
+margin-left: 400px;
+
+
+}
+
+
+
+.paragrafo{
+margin-top: 40px;
+margin-left: 200px;
+gap: 80px;
+font-size: 30px;
+}
+
+
+.botao{display: flex;
+margin-bottom: 30px;
+margin-left: 900px;
+
+font-size: 20px;
+border-radius: 15px;
+}
+
+.botaoum{
+margin: 19px;
+background-color: rgb(230, 233, 76);
+font-size: 50px;
+border-radius: 40px;
+
+
+}
+
+
+.paragrafo{display: flex;
+    font-size: 28px;
+margin-left: 300px;
+gap: 80px;
+}
+
+.paragrafo2{
+display: flex;
+margin-left: 50px;
+gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

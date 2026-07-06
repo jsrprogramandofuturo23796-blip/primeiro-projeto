@@ -1,0 +1,70 @@
+*{margin: 0;
+    border: 0;
+    background-color: rgb(143, 228, 228);
+}
+
+
+
+.ignora{
+    display: flex;
+   margin-top: 70px;
+margin-left: 40px;
+gap: 40px;
+
+
+}
+
+
+
+
+
+.titulo{display: flex;
+    
+    margin-left: 400px;
+margin-top: 20px;
+
+}
+
+.descrisao{
+display: flex;
+
+
+
+}
+
+.descrisaodois{
+    display: flex;
+margin-left: 25px;
+gap: 45px;
+font-size: 30px;
+margin-top: 50px;
+
+
+}
+
+.joguinho{
+display: flex;
+margin-top: 40px;
+margin-left: 500px;
+
+
+}
+
+.novafase{
+font-size: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

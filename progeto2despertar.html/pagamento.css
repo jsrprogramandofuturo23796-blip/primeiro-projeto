@@ -1,0 +1,40 @@
+*{margin: 0;
+padding: 0;
+background-color: aqua;
+}
+
+
+.h1{display: flex;
+margin-top: 40px;
+margin-left: 500px;
+
+}
+
+
+.h2{
+display: flex;
+margin: 50px;
+
+
+}
+
+
+.ul{
+display: inline-block;
+margin-left: 40px;
+font-size: 30px;
+gap: 80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
