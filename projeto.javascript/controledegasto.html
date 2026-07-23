@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gastos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="./controledegastos.css" rel="stylesheet">
+</head>
+<body>
+    
+    <main class="container">
+        <header class="header">
+            <h2 class="gastos">Controle de Gastos Diários</h2>
+            <p class="subtitle">Registre despesas e entradas. Dados salvos localmente no navegador.</p>
+        </header>
+
+        <div class="gastos0">
+    <section class="form-section">
+        <h3>Adicionar gasto</h3>
+        <input id="gasto-desc" type="text" placeholder="Descrição do gasto">
+        <input id="gasto-valor" type="number" step="0.01" placeholder="Valor do gasto">
+        <input id="gasto-data" type="date">
+        <select id="gasto-pagamento">
+            <option value="dinheiro">Dinheiro</option>
+            <option value="pix">PIX</option>
+            <option value="cartao">Cartão</option>
+            <option value="outro">Outro</option>
+        </select>
+        <button id="btn-add-gasto">Adicionar gasto</button>
+    </section>
+
+    <section class="form-section">
+        <h3>Adicionar entrada (receita)</h3>
+        <input id="entrada-desc" type="text" placeholder="Descrição da entrada">
+        <input id="entrada-valor" type="number" step="0.01" placeholder="Valor da entrada">
+        <select id="entrada-tipo">
+            <option value="pix">PIX</option>
+            <option value="cartao">Cartão</option>
+            <option value="dinheiro">Dinheiro</option>
+        </select>
+        <button id="btn-add-entrada">Adicionar entrada</button>
+    </section>
+
+    <section class="listas">
+        <h3>Gastos registrados</h3>
+        <ul id="lista-gastos"></ul>
+
+        <h3>Entradas registradas</h3>
+        <ul id="lista-entradas"></ul>
+    </section>
+
+    <section class="totais">
+        <div class="total-item">Total gasto na semana: <span id="total-gasto">0.00</span></div>
+        <div class="total-item">Total entradas (PIX + Cartão): <span id="total-entradas-pix-cartao">0.00</span></div>
+    </section>
+
+    <section class="relatorio">
+        <h3>Relatório semanal</h3>
+        <p class="report-note">Gera um relatório dos últimos 7 dias e abre o envio por WhatsApp ou email.</p>
+        <div class="report-controls">
+            <select id="report-channel">
+                <option value="whatsapp">WhatsApp</option>
+                <option value="email">Email</option>
+            </select>
+            <input id="report-phone" type="tel" placeholder="Número para WhatsApp">
+            <input id="report-email" type="email" placeholder="Email do destinatário" style="display:none;">
+            <button id="btn-send-report">Gerar e enviar relatório</button>
+        </div>
+        <div class="report-status">Último envio: <span id="last-report">Nenhum</span></div>
+    </section>
+
+        </div>
+    </main>
+
+    <script src="./controledegasto.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(180deg,#f5f7fa 0%, #eef2f6 100%);
+  color: #1f2937;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 30px 16px;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.gastos {
+  font-size: 1.8rem;
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.gastos0 {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-section h3 {
+  font-size: 1rem;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.form-section input,
+.form-section select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d9e2ec;
+  background: #f8fafc;
+  outline: none;
+  font-size: 0.95rem;
+  color: #111827;
+}
+
+.form-section input:focus,
+.form-section select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+}
+
+button#btn-add-gasto,
+button#btn-add-entrada {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(90deg, #2563eb, #4f46e5);
+  color: #ffffff;
+  border: none;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+button#btn-add-gasto:hover,
+button#btn-add-entrada:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.18);
+}
+
+.listas {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  grid-column: 1 / -1;
+}
+
+.listas h3 {
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.listas ul {
+  list-style: none;
+  padding: 0;
+  max-height: 290px;
+  overflow-y: auto;
+}
+
+.listas li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8fbff;
+  border: 1px solid #e6edf6;
+  padding: 12px 14px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.listas li button {
+  background: #ef4444;
+  border: none;
+  color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.totais {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.total-item {
+  flex: 1;
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  padding: 16px 18px;
+  border-radius: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.relatorio {
+  grid-column: 1 / -1;
+  background: #f8fafc;
+  border: 1px solid #d9e2ec;
+  border-radius: 16px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.relatorio h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.report-note {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.report-controls {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.report-controls select,
+.report-controls input {
+  width: 100%;
+}
+
+.report-controls button {
+  justify-self: flex-end;
+}
+
+.report-status {
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+@media (max-width: 900px) {
+  .gastos0 {
+    grid-template-columns: 1fr;
+  }
+
+  .totais {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .report-controls {
+    grid-template-columns: 1fr;
+  }
+}
+  .gastos0 {
+    grid-template-columns: 1fr;
+  }
+
+  .totais {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .gastos {
+    font-size: 1.5rem;
+  }
+
+  .form-section {
+    gap: 10px;
+  }
+
+  button#btn-add-gasto,
+  button#btn-add-entrada {
+    width: 100%;
+  }
+}
+
+
