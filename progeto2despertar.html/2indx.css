@@ -4,75 +4,112 @@ margin: 0;
 padding: 0;
 }
 
-
+.inlainebox{
+    display: flex;
+    align-items: first baseline;
+}
 
 .h1{
     display: flex;
 align-items: center;
 justify-content: center;
+margin-top: 25px;
 }
 
 .h12{
-    display: flex;
-align-items: center;
-justify-content: center;
-font-size: 40px;
-margin-top: 30px;
-
-
+font-size: 20px;
+margin-top:10px;
+margin: 20px;
+}
+.h21{
+display: inline-flex;
+    margin-left: 30px;
+   
 }
 
+
+#menuprincipal{
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+    border: 3px solid brown;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: #6fe2e6;
+}
+
+   
+
+
+
+
 .esclarecimento{
-display: flex;
-margin: 20px;
-margin-left: 75px;
-margin-right: 95px;
-font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    font-size: 20px;
+   border: 4px solid brown;
+
 }
 
 .alinhando{
-margin-left: 58px;
-margin-right: 100px;
-
-font-size: 20px;
-
+    margin-left: 80px;
+    font-size: 20px;
+  border: 3px solid brown;
 }
 
 
 
-    .fotocomeco1{
-display: inline-flex;
-margin: 10px;
-width: max-content;
+.biografiajao{
+    margin-right: 50px;
+    font-style: 30px;
+    font-size: 20px;
+    margin-left: 90px;
+    margin-right: 100px;
+    border: 4px solid brown;
+}
 
-    }
+.clase1{
+display: inline;
+align-items: baseline;
+
+
+
+}
+.clase{
+display: flex;
+margin: 30px;
+
+}
+
+.biografiajoao2{
+    display: flex;
+justify-content: center;
+ 
+}
+.fotocomeco1{
+    display: inline;
+align-items: baseline;
+
+}
 
 .fotocomeco{
 
 display: inline-block;
 width: 410px;
 font-size: 20px;
-margin-left: 25px;
-
+margin-left: 20px;
+border: 4px solid brown;
 
 }
 
 .fotocomeco12{
 display: inline-block;
-
+border: 4px solid brown;
 width: 405px;
 margin-left: 20px;
 font-size: 20px;
 
-
-
-}
-
-
-
-.biografiajoao2{
-display: flex;
-margin-left: 100px;
 
 
 }
@@ -105,24 +142,6 @@ margin-left: 990px;
 }
 
 
-.biografiajao{
-    margin-right: 50px;
-    
-font-style: 30px;
-font-size: 20px;
-margin-left: 90px;
-margin-right: 100px;
-
-}
-
-.clase{
-display: flex;
-margin: 30px;
-margin-left: 60px;
-gap: 200px;
-
-}
-
 
 
 .esvaziar{
@@ -138,17 +157,4 @@ margin-left: 20px;
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 

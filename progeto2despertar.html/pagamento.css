@@ -1,40 +1,170 @@
-*{margin: 0;
-padding: 0;
-background-color: aqua;
+* {
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
 }
 
 
-.h1{display: flex;
-margin-top: 40px;
-margin-left: 500px;
+.h1 {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 500px;
+
+}
+
+.h2 {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+.h20 {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 150px;
+    font-size: 28px;
+}
+
+.sortear1 {
+    display: inline-flex;
+    margin-top: 20px;
+    margin-left: 230px;
+    font-size: 25px;
+    gap: 10px;
+    border: 4px solid black;
+    border-radius: 35px;
+    margin-right: 100px;
+
+}
+.gastos{
+    display: inline-block;
+  font-size: 30px;
+    border: 4px solid black;
+
+}
+.valormensal{
+    display: inline-block;
+    margin-left: 760px;
+}
+
+.gastos1{display: flex;
+    font-size: 20px;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+.gastos2{display: flex;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 90px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+
+}
+
+.container3 {
+    display: inline-block;
+    border: 4px solid black;
+
+}
+
+.container2 {
+    margin-left: 80px;
+    margin: 20px 50px 20px 70px;
+}
+
+.resultadop {
+    display: flex;
+    background-color: #f0f349;
+
+    margin: 10px 200px 10px 150px;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.container4 {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 20px;
+    gap: 30px;
+}
+
+
+.container5 {
+    display: inline-block;
+
+    gap: 30px;
+    font-size: 20px;
+    margin: 20px 0 0 40px;
+}
+
+.container1{
+border: 4px solid #393a1c;
 
 }
 
 
-.h2{
-display: flex;
-margin: 50px;
 
+.sortear {
+    display: inline-block;
+    gap: 10px;
+    margin-left: 100px;
+    font-weight: 30px;
+}
 
+.input1 {
+    font-size: 20px;
+    width: 150px;
+    border: 4px solid black;
+}
+
+.input2 {
+    font-size: 20px;
+    width: 150px;
+    border: 4px solid black;
 }
 
 
-.ul{
-display: inline-block;
-margin-left: 40px;
-font-size: 30px;
-gap: 80px;
+
+
+
+
+
+
+
+
+.mentereal {
+    display: flex;
+    margin-top: 40px;
+    gap: 10px;
 
 }
 
+.comercial {
+    display: flex;
+    gap: 5px;
+    margin-top: 72px;
 
+    width: 100%;
+}
 
+.carrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.cabecalho {
+    display: flex;
+    align-items: inline-block;
 
+    margin-top: 20px;
 
-
-
-
-
-
-
+    background-color: #b4abab;
+    border: 4px solid black;
+    padding: 20px;
+}

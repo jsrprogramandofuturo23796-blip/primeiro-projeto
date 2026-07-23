@@ -1,85 +1,74 @@
-*{margin: 0;
+*{
+    margin: 0;
     border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
     background-color: rgb(143, 228, 228);
+    padding: 20px;
 }
 
-.dasli{
-   display: flex;
-    list-style: none;
-    padding: 50px;
-    font-size: 20px;
-    margin-left: 150px;
-    padding: 0;
-gap: 100px;
-
-}
-#menuprincipal{display: flex;
-    align-items: center;
-    margin-top: 50px;
-    font-size: 25px;
+.titulo{
+    text-align: center;
+    margin: 30px 0;
+    color: #4b1d12;
 }
 
-
-.titulo {align-items: center;
-display: flex;
-justify-content: center;
-margin-top: 30px;
-}
-
-.fotosvidios{
-display: flex;
-   margin-top: 80px;
-gap: 20px;
-margin-left: 50px;
-
-}
-
-.mentereal{
-display: flex;
-   margin-top: 40px;
-gap: 10px;
-
-}
-
-.oimaginario{margin-top: 40px;
-   margin-left: 150px;
-}
-
-.descrisao{
-    margin-top: 70px;
-display: flex;
-    gap: 30px;
-    font-size: 25px;
-    margin-left: 40px;
-}
-
-.oreino{
-margin-top: 50px;
-margin-left: 30px;
-font-size: 25px;
-}
-
-.comercial{display: flex;
-    gap: 5px;
-    margin-top: 72px;
-    
+#menuprincipal{
     width: 100%;
+    border: 3px solid brown;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: #f7f7f7;
 }
 
-.carrinho{
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.ordem{display: flex;
-    margin-top: 5px;
-    
+.dasli01{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.super{display: flex;
-margin-left: 40px;}
+.menu-esquerda,
+.menu-direita{
+    flex: 1;
+    min-width: 220px;
+}
 
+.dasli,
+.menu-direito{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    gap: 12px;
+}
 
+.dasli a,
+.menu-direito a{
+    text-decoration: none;
+    color: #2f4f4f;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
 
+.dasli a:hover,
+.menu-direito a:hover{
+    color: brown;
+}
 
+.imagem-centro{
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chocodespèrto</title>
+    <link rel="stylesheet" href="./chocoodesperto.css">
+</head>
+<body>
+
+    <div class="menu">
+        <nav>
+            <a href="#pagamento" id="link-encomendas" class="menu-link">Encomendas</a>
+            <a href="#cadastro-revendedor" id="link-sejaumrevendedor" class="menu-link">Seja um revendedor</a>
+            <a href="#produtos" id="link-conhecanososprodutos" class="menu-link">Todos os produtos</a>
+            <a href="#biografia-choocodesperto" id="link-biografiachoocodesperto" class="menu-link">Biografia choocodesperto</a>
+            <a href="#tornesemembro" id="link-tornesemembro" class="menu-link">Vídeo aula dos melhores brigadeiros</a>
+        </nav>
+    </div>
+
+    <div class="fotodiv">
+        <h1>CHOCOOdesperto</h1>
+    </div>
+
+    <div class="h2">
+        <h2>Conheça nossos produtos</h2>
+    </div>
+
+    <section id="produtos" class="produtos">
+        <div class="menu0">
+            <div class="produto-card">
+                <img src="./img/brigadeiro.jfif" class="produto-img" alt="Brigadeiro"
+                    data-default="./img/brigadeiro.jfif" data-hover="./img/brigadeiros.jpg">
+                <p class="inlaineblok">brigadeiro<br>sabor choococo<br>nutrição do coco<br>com sabor de chocolate</p>
+                <input type="checkbox" class="dd-cart" data-nome="brigadeiro ao leite" data-preco="15">
+            </div>
+
+            <div class="produto-card">
+                <img src="./img/brigadeiro.jfif" class="produto-img" alt="Brigadeiro"
+                    data-default="./img/brigadeiro.jfif" data-hover="./img/brigadeiros.jpg">
+                <p class="inlaineblok">brigadeiro<br>sabor choococo<br>nutrição do coco<br>com sabor de chocolate</p>
+                <input type="checkbox" class="dd-cart" data-nome="brigadeiro" data-preco="20">
+            </div>
+
+            <div class="produto-card">
+                <img src="./img/brigadeiro.jfif" class="produto-img" alt="Brigadeiro"
+                    data-default="./img/brigadeiro.jfif" data-hover="./img/brigadeiros.jpg">
+                <p class="inlaineblok">brigadeiro<br>sabor choococo<br>nutrição do coco<br>com sabor de chocolate</p>
+                <input type="checkbox" class="dd-cart" data-nome="brigadeiro ao leite" data-preco="15">
+            </div>
+        </div>
+
+        <div class="menu0">
+            <div class="produto-card">
+                <img src="./img/brigadeiro.jfif" class="produto-img" alt="Brigadeiro"
+                    data-default="./img/brigadeiro.jfif" data-hover="./img/brigadeiros.jpg">
+                <p class="inlaineblok">brigadeiro<br>sabor choococo<br>nutrição do coco<br>com sabor de chocolate</p>
+                <input type="checkbox" class="dd-cart" data-nome="brigadeiro choodesperto" data-preco="10">
+            </div>
+
+            <div class="produto-card">
+                <img src="./img/brigadeiro.jfif" class="produto-img" alt="Brigadeiro"
+                    data-default="./img/brigadeiro.jfif" data-hover="./img/brigadeiros.jpg">
+                <p class="inlaineblok">brigadeiro<br>sabor choococo<br>nutrição do coco<br>com sabor de chocolate</p>
+                <input type="checkbox" class="dd-cart" data-nome="brigadeiro" data-preco="20">
+            </div>
+
+            <div class="produto-card">
+                <img src="./img/brigadeiro.jfif" class="produto-img" alt="Brigadeiro"
+                    data-default="./img/brigadeiro.jfif" data-hover="./img/brigadeiros.jpg">
+                <p class="inlaineblok">brigadeiro<br>sabor choococo<br>nutrição do coco<br>com sabor de chocolate</p>
+                <input type="checkbox" class="dd-cart" data-nome="brigadeiro ao leite" data-preco="15">
+            </div>
+        </div>
+    </section>
+
+    <section class="slider-section">
+        <div id="slaide">
+            <button class="slider-btn prev" type="button" aria-label="Imagem anterior">&#10094;</button>
+
+            <div class="slider-track">
+                <div class="slider-item">
+                    <img src="./img/brigadeiro.jfif" alt="Brigadeiro">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/brigadeiros.jpg" alt="Brigadeiro 2">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/brigadeiro.jfif" alt="Brigadeiro 3">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/brigadeiros.jpg" alt="Brigadeiro 4">
+                </div>
+            </div>
+
+            <button class="slider-btn next" type="button" aria-label="Próxima imagem">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="biografia-choocodesperto" class="biografia">
+        <h3>Biografia choocodesperto</h3>
+        <p>O CHOCOOdesperto nasceu para transformar sabores em experiências. Nossa missão é levar brigadeiros especiais com carinho, criatividade e muito sabor para cada cliente.</p>
+    </section>
+
+    <section id="tornesemembro" class="video-aula">
+        <h3>Vídeo aula dos melhores brigadeiros</h3>
+        <div class="video-box">
+            <p>Vídeo em breve. Você pode substituir este conteúdo por um link do YouTube quando quiser.</p>
+        </div>
+    </section>
+
+    <div class="pagamento" id="pagamento">
+        <div class="botaoinput">
+            <p id="total">total:R$ 0.00</p>
+        </div>
+
+        <div class="formasdepagamento">
+            <label for="data-entrega">Data da entrega:</label>
+            <input type="date" id="data-entrega" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" placeholder="Rua, número, bairro, cidade" required>
+
+            <label for="telefone">Telefone para contato:</label>
+            <input type="tel" id="telefone" placeholder="(99) 99999-9999" required>
+
+            <label for="forma-pagamento">Forma de pagamento:</label>
+            <select id="forma-pagamento">
+                <option value="pix">Pix</option>
+                <option value="cartao">Cartão</option>
+                <option value="dinheiro">Dinheiro</option>
+            </select>
+
+            <label for="observacao">Observação:</label>
+            <textarea id="observacao" rows="3" placeholder="Ex.: entregar cedo"></textarea>
+
+            <button id="btn-finalizar" type="button">Finalizar pagamento</button>
+
+            <div id="destino-pagamento"></div>
+            <div id="resultado-pagamento"></div>
+            <div id="qrcode"></div>
+        </div>
+    </div>
+
+    <section class="cadastro-revendedor" id="cadastro-revendedor">
+        <h3>Cadastro de revendedor</h3>
+
+        <label for="nome-revendedor">Nome:</label>
+        <input type="text" id="nome-revendedor" placeholder="Seu nome">
+
+        <label for="whatsapp-revendedor">WhatsApp:</label>
+        <input type="tel" id="whatsapp-revendedor" placeholder="(99) 99999-9999">
+
+        <label for="cidade-revendedor">Cidade:</label>
+        <input type="text" id="cidade-revendedor" placeholder="Sua cidade">
+
+        <label for="identidade-cpf">CPF:</label>
+        <input type="text" id="identidade-cpf" placeholder="Identidade ou CPF">
+
+        <label for="rua-numero">Endereço:</label>
+        <input type="text" id="rua-numero" placeholder="Rua e número">
+
+        <label for="mensagem-revendedor">Mensagem:</label>
+        <textarea id="mensagem-revendedor" rows="3" placeholder="Quero vender os brigadeiros"></textarea>
+
+        <button id="btn-revendedor" type="button">Quero me cadastrar</button>
+        <div id="resultado-revendedor"></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.0/build/qrcode.min.js"></script>
+    <script src="./chocoodesperto.js"></script>
+</body>
+</html>
