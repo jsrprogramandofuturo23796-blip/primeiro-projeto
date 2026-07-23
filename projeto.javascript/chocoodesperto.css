@@ -1,0 +1,351 @@
+:root {
+    --marrom: #6b3b1f;
+    --creme: #fff8ee;
+    --texto: #3f240f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #fff8ee 0%, #ffe7c2 100%);
+    color: var(--texto);
+    line-height: 1.5;
+    padding-top: 70px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--creme);
+    border-bottom: 1px solid rgba(107, 59, 31, 0.15);
+    padding: 12px 16px;
+}
+
+.menu nav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--marrom);
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 999px;
+}
+
+.menu-link:hover {
+    background: rgba(107, 59, 31, 0.08);
+}
+
+.fotodiv {
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+                url('./img/brigadeiro.jfif') center/cover no-repeat;
+}
+
+h1 {
+    color: white;
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+}
+
+.h2 {
+    text-align: center;
+    padding: 24px 16px 8px;
+    color: var(--marrom);
+}
+
+.produtos,
+.biografia,
+.video-aula,
+.pagamento,
+.cadastro-revendedor {
+    scroll-margin-top: 90px;
+}
+
+.produtos {
+    padding: 0 16px 24px;
+}
+
+.menu0 {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.produto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.produto-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: transform 0.2s ease;
+}
+
+.produto-img:hover {
+    transform: scale(1.02);
+}
+
+.inlaineblok {
+    text-align: center;
+    font-weight: 600;
+}
+
+.dd-cart {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    accent-color: var(--marrom);
+}
+
+.slider-section {
+    padding: 20px 16px 30px;
+}
+
+#slaide {
+    position: relative;
+    width: min(100%, 900px);
+    height: 75vh;
+    min-height: 420px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+#slaide .slider-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.35s ease;
+}
+
+#slaide .slider-item {
+    min-width: 100%;
+    height: 100%;
+}
+
+#slaide .slider-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#slaide .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    color: var(--marrom);
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+#slaide .slider-btn.prev {
+    left: 12px;
+}
+
+#slaide .slider-btn.next {
+    right: 12px;
+}
+
+.biografia,
+.video-aula {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    padding: 24px 16px;
+    text-align: center;
+}
+
+.biografia h3,
+.video-aula h3 {
+    color: var(--marrom);
+    margin-bottom: 10px;
+}
+
+.video-box {
+    border-radius: 16px;
+    padding: 24px;
+    background: rgba(255,255,255,0.85);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.pagamento {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 16px;
+    gap: 20px;
+    background: linear-gradient(180deg, #fff8ee 0%, #ffe7c2 100%);
+}
+
+.botaoinput,
+.formasdepagamento {
+    width: min(100%, 560px);
+}
+
+#total {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--marrom);
+    text-align: center;
+}
+
+.formasdepagamento,
+.cadastro-revendedor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #fffaf3 0%, #fff3e0 100%);
+    box-shadow: 0 10px 24px rgba(107, 59, 31, 0.12);
+    border: 1px solid rgba(107, 59, 31, 0.10);
+}
+
+label {
+    font-weight: 700;
+    color: var(--texto);
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid #d5b68a;
+    background: #fffdf9;
+    color: var(--texto);
+    outline: none;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--marrom);
+    box-shadow: 0 0 0 4px rgba(107, 59, 31, 0.12);
+}
+
+button {
+    background: linear-gradient(135deg, var(--marrom), #8a4d24);
+    color: white;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(107, 59, 31, 0.18);
+}
+
+.cadastro-revendedor {
+    max-width: 620px;
+    margin: 36px auto 60px;
+}
+
+.cadastro-revendedor h3 {
+    text-align: center;
+    color: var(--marrom);
+    font-size: 1.4rem;
+}
+
+#resultado-pagamento,
+#destino-pagamento,
+#qrcode,
+#resultado-revendedor {
+    margin-top: 8px;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.85);
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .menu0 {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .menu0 {
+        grid-template-columns: 1fr;
+    }
+
+    .pagamento {
+        padding: 20px 12px;
+    }
+
+    .formasdepagamento,
+    .cadastro-revendedor {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .fotodiv {
+        min-height: 220px;
+    }
+
+    #slaide {
+        height: 60vh;
+        min-height: 280px;
+        border-radius: 16px;
+    }
+
+    #slaide .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}

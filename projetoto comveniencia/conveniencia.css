@@ -1,0 +1,70 @@
+*{
+margin: 0;
+padding: 0;
+background-color: aqua;
+
+}
+.primeira{
+margin-left: 30%;
+
+}
+
+.segunda{display: flex;
+margin-left: 80px;
+gap: 50px;
+font-size: 25px;
+
+
+}
+
+
+.terceira{
+display: flex;
+gap: 30px;
+margin-left: 30px;
+width: 100%;
+
+}
+
+.menu2{
+
+margin-top: 5px;
+
+
+}
+
+.menu3{
+display: flex;
+list-style: none;
+gap: 35px;
+margin-left: 10px;
+font-size: 25px;
+
+margin-top: 10px;
+}
+.menu4{
+margin-top: 30px;
+
+}
+
+.carrinho{
+display: flex;
+margin-top: 9px;
+
+}
+
+
+.carrinho2{
+display: flex;
+margin-top: 0;
+
+}
+
+.carrinho3{
+display: flex;
+flex-direction: column;
+
+
+}
+
+

@@ -1,0 +1,113 @@
+*{
+margin: 0;
+padding: 0;
+background-color: aqua;
+}
+
+.dasbordas{display:flex;
+    border: 5px solid black;
+width: 500px;
+height: 80px;
+
+}
+.digiteonomedocontato{
+margin-left: 5px;
+width: 280px;
+height: 30px;
+}
+
+.resultadodabusca{display: inline-block;
+margin-top: 45px;
+border: 2px solid brown;
+width: 450px;
+height: 33px;
+}
+
+
+
+.procurarcontato{
+margin-left: 10px;
+width: 150px;
+height: 20px;
+}
+
+
+
+
+.sorteador{
+display: inline-flex;
+
+gap: 20px;
+margin-left: 815px;
+}
+
+.sorteador1{display: contents;
+margin-top: 90px;
+border: 5px solid black;
+
+}
+
+.sorteador2{display: flex;
+    margin-left: 800px;
+
+}
+
+
+.sorteador3botao{
+display: flex;
+margin-left: 970px;
+font-size: 30px;
+
+margin-bottom: 80px;
+background-color: rgb(251, 255, 0);
+padding: 5px 25px;
+
+gap: 30px;
+}
+
+.sorteador4input1min{display: inline-flex;
+background-color: rgb(69, 88, 117);
+padding: 10px 25px;
+gap: 10px;
+}
+
+
+.sorteador4input12max{display: inline-flex;
+  
+padding: 10px 25px;
+background-color: rgb(52, 45, 92);
+}
+
+.sorteador5{
+display: flex;
+margin-left: 940px;
+margin-top:20px;
+margin-bottom: 20px;
+}
+
+.gastos0{display: inline-block;
+
+    border:5px solid brown;
+    margin-bottom: 90px;
+    margin-left: 200px;
+    width: 36vw;
+    height: 20vw;
+}
+
+
+.gastos1{
+   
+
+margin-top: 80px;
+}
+
+.descrisaodogasto2{margin-left: 200px;
+}
+.gastos{display: flex;
+
+    margin-bottom: 20px;
+margin-left: 300px;
+
+}
+
+
